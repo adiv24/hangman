@@ -2,16 +2,22 @@
 <html lang="en">
 <head>
     <script src="hangman.js"></script>
+    <link rel="stylesheet" href="hangman.css">
     <title>Hangman!</title>
 </head>
 <body>
-    <div><img src="images/hangman6.gif" alt="Hangman Image"></div>
-    <div id="clue" Press New Game to Play!></div>
     <div>
-    <input type="text" size="1" maxlength="1">
-    <button>Guess</button>
+        <img id="hangmanpic" src="images/hangman6.gif" alt="Hangman Image">
     </div>
+    <div id="clue">Press New Game to Play!</div>
 
-   <div id="newgameare"><button>New Game</button></div> 
+    <div>
+        <input id="guess" type="text" size="1" maxLength="1">
+        <button onClick="guessLetter();">Guess</button>
+    </div>
+    <div id="guesses"></div>
+    <div id="newgamearea">
+        <button onClick="newGame();">New Game</button>
+    </div>
 </body>
 </html>
